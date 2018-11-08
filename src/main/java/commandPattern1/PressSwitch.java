@@ -8,7 +8,7 @@ public class PressSwitch {
         Command switchUp = new FlipUpCommand(lamp);         // Command - ConcreteCommand
         Command switchDown = new FlipDownCommand(lamp);     // Command - ConcreteCommand
 
-        final Switch mySwitch = new Switch();               // Invoker
+        Switch mySwitch = new Switch();                     // Invoker
         mySwitch.storeAndExecute(switchUp);                 // Set and execute command
         mySwitch.storeAndExecute(switchDown);
         
